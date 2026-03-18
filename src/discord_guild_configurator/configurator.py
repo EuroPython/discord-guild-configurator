@@ -186,19 +186,24 @@ class GuildConfigurator:
                 await category.edit(position=position)
 
     async def ensure_text_channel(
-        self, name: str, *, category: discord.CategoryChannel | None, position: int
+        self,
+        name: str,
+        *,
+        category: discord.CategoryChannel | None = None,
+        position: int | None = None,
     ) -> None:
         logger.info("Ensure text channel %s at position %d", name, position)
         channel = discord_get(self.guild.text_channels, name=name)
         if channel is None:
             logger.debug("Create text channel %s", name)
-            await self.guild.create_text_channel(name=name, category=category, position=position)
+            _position = discord.utils.MISSING if position is None else position
+            await self.guild.create_text_channel(name=name, category=category, position=_position)
         else:
             logger.debug("Found text channel")
-            if channel.category != category:
+            if category is not None and channel.category != category:
                 logger.debug("Update category")
                 await channel.edit(category=category)
-            if channel.position != position:
+            if position is not None and channel.position != position:
                 logger.debug("Update position")
                 await channel.edit(position=position)
 
@@ -368,6 +373,7 @@ class GuildConfigurator:
         current_system_channel = self.guild.system_channel
         if current_system_channel is None or current_system_channel.name != system_channel.name:
             logger.debug("Update system channel")
+            await self.ensure_text_channel(system_channel.name)
             new_system_channel = self.get_text_channel(system_channel.name)
             await self.guild.edit(system_channel=new_system_channel)
 
@@ -394,17 +400,42 @@ class GuildConfigurator:
         if self.guild.default_notifications != discord.NotificationLevel.only_mentions:
             await self.guild.edit(default_notifications=discord.NotificationLevel.only_mentions)
 
-        if "COMMUNITY" not in self.guild.features:
-            logger.debug("Enable guild 'COMMUNITY' feature")
+        # ensure community feature channels are created
+        if (
+            self.guild.public_updates_channel is None
+            or self.guild.public_updates_channel.name != community_features.public_updates_channel
+        ):
+            logger.debug("Update public updates channel")
+            await self.ensure_text_channel(community_features.public_updates_channel)
             await self.guild.edit(
-                community=True,
                 public_updates_channel=self.get_text_channel(
                     community_features.public_updates_channel
-                ),
-                rules_channel=self.get_text_channel(community_features.rules_channel),
+                )
+            )
+
+        if (
+            self.guild.rules_channel is None
+            or self.guild.rules_channel.name != community_features.rules_channel
+        ):
+            logger.debug("Update rules channel")
+            await self.ensure_text_channel(community_features.rules_channel)
+            await self.guild.edit(
+                rules_channel=self.get_text_channel(community_features.rules_channel)
+            )
+
+        if (
+            self.guild.safety_alerts_channel is None
+            or self.guild.safety_alerts_channel.name != community_features.safety_alerts_channel
+        ):
+            logger.debug("Update safety alerts channel")
+            await self.ensure_text_channel(community_features.safety_alerts_channel)
+            await self.guild.edit(
                 safety_alerts_channel=self.get_text_channel(
                     community_features.safety_alerts_channel
-                ),
-                description=community_features.guild_description,
-                explicit_content_filter=discord.ContentFilter.all_members,
+                )
             )
+
+        # set community feature flag
+        if "COMMUNITY" not in self.guild.features:
+            logger.debug("Enable guild 'COMMUNITY' feature")
+            await self.guild.edit(community=True)
