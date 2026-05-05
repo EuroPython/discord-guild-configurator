@@ -129,7 +129,7 @@ class GuildConfig(StrictBaseModel):
 
     @model_validator(mode="after")
     def verify_verification_level(self) -> Self:
-        if self.community_features and self.verification_level < discord.VerificationLevel.medium:  # type: ignore[unsupported-operator]
+        if self.community_features and self.verification_level < discord.VerificationLevel.medium:  # ty: ignore[unsupported-operator]
             raise ValueError(
                 "The Community feature requires a verification level of at least medium"
             )

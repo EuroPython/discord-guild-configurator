@@ -63,7 +63,7 @@ class GuildConfigurator:
     def _check_config_compatibility(self, template: GuildConfig) -> None:
         if (
             "COMMUNITY" in self.guild.features
-            and template.verification_level < discord.VerificationLevel.medium  # type: ignore[unsupported-operator]
+            and template.verification_level < discord.VerificationLevel.medium  # ty: ignore[unsupported-operator]
         ):
             raise ValueError(
                 "The Community feature requires a verification level of at least medium"
@@ -405,7 +405,7 @@ class GuildConfigurator:
         logger.info("Ensure 'COMMUNITY' feature configuration")
 
         logger.debug("Ensure rules and public updates channels")
-        if self.guild.verification_level < VerificationLevel.medium:  # type: ignore[unsupported-operator]
+        if self.guild.verification_level < VerificationLevel.medium:  # ty: ignore[unsupported-operator]
             logger.debug("Raise verification level at medium")
             await self.guild.edit(verification_level=discord.VerificationLevel.medium)
 
