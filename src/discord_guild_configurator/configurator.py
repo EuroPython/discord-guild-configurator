@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 import re
 from collections import defaultdict
-from typing import Final, assert_never
+from typing import TYPE_CHECKING, Final, assert_never
 
 import discord
 from discord import VerificationLevel
@@ -21,6 +21,9 @@ from discord_guild_configurator.models import (
     VoiceChannel,
 )
 
+if TYPE_CHECKING:
+    from discord_guild_configurator.generated_models import ContentFilter
+
 logger = logging.getLogger(__name__)
 
 
@@ -35,8 +38,11 @@ class GuildConfigurator:
         for role_template in template.roles:
             await self.ensure_role(role_template)
 
-        logger.info("Configuring system channel")
-        await self.ensure_system_channel(template.system_channel)
+        logger.info("Configuring system setup")
+        await self.ensure_system_setup(
+            template.system_channel,
+            template.explicit_content_filter,
+        )
 
         if template.community_features:
             logger.info("Configuring 'COMMUNITY' features")
@@ -368,8 +374,10 @@ class GuildConfigurator:
                     logger.debug("Update topic of channel %s", channel_template.name)
                     await channel.edit(topic=expected_topic)
 
-    async def ensure_system_channel(self, system_channel: SystemChannel) -> None:
-        logger.info("Ensure system channel configuration")
+    async def ensure_system_setup(
+        self, system_channel: SystemChannel, content_filter: ContentFilter
+    ) -> None:
+        logger.info("Ensure system configuration")
         current_system_channel = self.guild.system_channel
         if current_system_channel is None or current_system_channel.name != system_channel.name:
             logger.debug("Update system channel")
@@ -388,6 +396,10 @@ class GuildConfigurator:
         if self.guild.system_channel_flags != target_flags:
             logger.debug("Update system channel flags")
             await self.guild.edit(system_channel_flags=target_flags)
+
+        if self.guild.explicit_content_filter != content_filter:
+            logger.debug("Update explicit content filter")
+            await self.guild.edit(explicit_content_filter=content_filter)
 
     async def ensure_community_feature(self, community_features: CommunityFeatures) -> None:
         logger.info("Ensure 'COMMUNITY' feature configuration")
