@@ -450,4 +450,14 @@ class GuildConfigurator:
         # set community feature flag
         if "COMMUNITY" not in self.guild.features:
             logger.debug("Enable guild 'COMMUNITY' feature")
-            await self.guild.edit(community=True)
+            await self.guild.edit(
+                community=True,
+                rules_channel=self.get_text_channel(community_features.rules_channel),
+                public_updates_channel=self.get_text_channel(
+                    community_features.public_updates_channel
+                ),
+                safety_alerts_channel=self.get_text_channel(
+                    community_features.safety_alerts_channel
+                ),
+                description=community_features.guild_description,
+            )
