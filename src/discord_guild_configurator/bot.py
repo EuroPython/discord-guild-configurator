@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import logging
 import sys
-from typing import TYPE_CHECKING, Any, Final
+from typing import TYPE_CHECKING, Any, Final, override
 
 import discord
 from discord import Guild
@@ -34,7 +34,8 @@ class GuildConfigurationBot(Bot):
 
         await self.close()
 
-    async def on_error(self, event: str, /, *args: Any, **kwargs: Any) -> None:  # noqa: ANN401 (Any)
+    @override
+    async def on_error(self, event: str, /, *args: Any, **kwargs: Any) -> None:
         """Event handler for uncaught exceptions."""
         exc_type, exc_value, _exc_traceback = sys.exc_info()
         if exc_type is None:

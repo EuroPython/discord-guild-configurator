@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Niklas Mertsch", email = "niklasmertsch@web.de" },
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
     "discord-py>=2.7.1,<3",
     "pydantic>=2.13.3,<3",
@@ -16,7 +16,7 @@ dependencies = [
 discord-guild-configurator = "discord_guild_configurator.main:main"
 
 [build-system]
-requires = ["uv_build>=0.11.9,<0.12.0"]
+requires = ["uv_build>=0.11.14,<0.12.0"]
 build-backend = "uv_build"
 
 [dependency-groups]
