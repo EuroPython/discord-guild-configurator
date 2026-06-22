@@ -415,19 +415,6 @@ CONFIG = GuildConfig(
                     ),
                 ),
                 ForumChannel(
-                    name="beginners-day",
-                    topic=(
-                        "Channel for the Beginners' Day: "
-                        "https://ep2025.europython.eu/beginners-day/"
-                    ),
-                    permission_overwrites=[
-                        PermissionOverwrite(
-                            roles=[ROLE_BEGINNERS_DAY],
-                            allow=["view_channel"],
-                        ),
-                    ],
-                ),
-                ForumChannel(
                     name="slides-and-artefacts",
                     topic="""
                         You can create a thread for your talk where you can add slides and other artefacts.
