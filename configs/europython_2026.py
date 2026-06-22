@@ -11,7 +11,6 @@ from discord_guild_configurator.models import (
     Role,
     SystemChannel,
     TextChannel,
-    VoiceChannel,
 )
 
 COLOR_BLUE = "#0096C7"
@@ -343,17 +342,6 @@ CONFIG = GuildConfig(
                         "Please bring found items to the registration desk."
                     ),
                 ),
-            ],
-            permission_overwrites=[
-                PermissionOverwrite(roles=[ROLE_EVERYONE], deny=["view_channel"]),
-                PermissionOverwrite(roles=ROLES_REGISTERED, allow=["view_channel"]),
-            ],
-        ),
-        Category(
-            name="Remote Attendees",
-            channels=[
-                TextChannel(name="remote-text", topic="Text chat for remote attendees"),
-                VoiceChannel(name="remote-voice"),
             ],
             permission_overwrites=[
                 PermissionOverwrite(roles=[ROLE_EVERYONE], deny=["view_channel"]),

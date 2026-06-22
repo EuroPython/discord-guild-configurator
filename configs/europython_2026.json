@@ -352,50 +352,6 @@
       ]
     },
     {
-      "name": "Remote Attendees",
-      "channels": [
-        {
-          "type": "text",
-          "name": "remote-text",
-          "topic": "Text chat for remote attendees",
-          "permission_overwrites": [],
-          "channel_messages": []
-        },
-        {
-          "type": "voice",
-          "name": "remote-voice",
-          "permission_overwrites": []
-        }
-      ],
-      "permission_overwrites": [
-        {
-          "roles": [
-            "@everyone"
-          ],
-          "allow": [],
-          "deny": [
-            "view_channel"
-          ]
-        },
-        {
-          "roles": [
-            "Participants",
-            "Sponsors",
-            "Speakers",
-            "Volunteers",
-            "Organizers",
-            "Moderators",
-            "Code of Conduct Committee",
-            "Beginners Day"
-          ],
-          "allow": [
-            "view_channel"
-          ],
-          "deny": []
-        }
-      ]
-    },
-    {
       "name": "Sponsors",
       "channels": [],
       "permission_overwrites": [
