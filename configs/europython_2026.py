@@ -378,6 +378,11 @@ CONFIG = GuildConfig(
                         PermissionOverwrite(roles=[ROLE_EVERYONE], deny=["send_messages"])
                     ],
                 ),
+                TextChannel(name="s1", topic="Livestream: [TBA]"),
+                TextChannel(name="s2", topic="Livestream: [TBA]"),
+                TextChannel(name="s3a", topic="Livestream: [TBA]"),
+                TextChannel(name="s3b", topic="Livestream: [TBA]"),
+                TextChannel(name="s4", topic="Livestream: [TBA]"),
                 TextChannel(
                     name="exhibit-hall", topic="For conversations related to the exhibit hall."
                 ),

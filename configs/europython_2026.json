@@ -448,6 +448,41 @@
         },
         {
           "type": "text",
+          "name": "s1",
+          "topic": "Livestream: [TBA]",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "s2",
+          "topic": "Livestream: [TBA]",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "s3a",
+          "topic": "Livestream: [TBA]",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "s3b",
+          "topic": "Livestream: [TBA]",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "s4",
+          "topic": "Livestream: [TBA]",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
           "name": "exhibit-hall",
           "topic": "For conversations related to the exhibit hall.",
           "permission_overwrites": [],
