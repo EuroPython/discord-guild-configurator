@@ -500,7 +500,7 @@
         {
           "type": "forum",
           "name": "sprints",
-          "topic": "To keep things manageable, one post/thread per sprint would be the best.If there are reasons to create multiple threads/posts (e.g., for groups working on a sub-project), that should be fine, too.",
+          "topic": "To keep things manageable, please create only one post/thread per sprint. If you need multiple, that's fine too.",
           "permission_overwrites": [],
           "tags": [],
           "require_tag": false

@@ -410,9 +410,8 @@ CONFIG = GuildConfig(
                 ForumChannel(
                     name="sprints",
                     topic=(
-                        "To keep things manageable, one post/thread per sprint would be the best."
-                        "If there are reasons to create multiple threads/posts "
-                        "(e.g., for groups working on a sub-project), that should be fine, too."
+                        "To keep things manageable, please create only one post/thread per sprint. "
+                        "If you need multiple, that's fine too."
                     ),
                 ),
                 ForumChannel(
