@@ -321,6 +321,13 @@
           "topic": "Channel for the coordination of lost and found items. Please bring found items to the registration desk.",
           "permission_overwrites": [],
           "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "animal-appreciation",
+          "topic": "A place to share pictures and stories about your pets, or animals in general :heart:",
+          "permission_overwrites": [],
+          "channel_messages": []
         }
       ],
       "permission_overwrites": [
