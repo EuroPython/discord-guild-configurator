@@ -150,8 +150,15 @@ class GuildConfigurator:
                 )
 
     async def ensure_categories_and_channels(self, category_templates: list[Category]) -> None:
+        if not self.guild:
+            return
+
         # channel positions are global, not per-category
         channel_position = 0
+        
+        # 1. Initialize an empty dictionary to hold our batch positions
+        bulk_positions = {}
+
         for category_position, category_template in enumerate(category_templates):
             await self.ensure_category(name=category_template.name, position=category_position)
 
@@ -174,11 +181,19 @@ class GuildConfigurator:
                         require_tag=channel_template.require_tag,
                     )
                 else:
-                    # hint for the type checker: report error if there can be more channel types
                     assert_never(channel_template)
+
+                # 2. Track the live channel and map its final position using self.guild context
+                live_channel = self.get_channel(channel_template.name)
+                if live_channel:
+                    bulk_positions[live_channel] = channel_position
 
                 channel_position += 1
 
+        # 3. Batch update using self.guild to prevent conflicts
+        if bulk_positions:
+            logger.info("Executing bulk channel position sync to resolve hierarchy drift.")
+            await self.guild.edit_channel_positions(positions=bulk_positions)
     async def ensure_category(self, *, name: str, position: int) -> None:
         logger.info("Ensure category %s at position %d", name, position)
         category = discord_get(self.guild.categories, name=name)
