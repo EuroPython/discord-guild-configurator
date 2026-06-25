@@ -360,7 +360,127 @@
     },
     {
       "name": "Sponsors",
-      "channels": [],
+      "channels": [
+        {
+          "type": "text",
+          "name": "manychat",
+          "topic": "Welcome to the channel of our Platinum sponsor Manychat!\n\nWebsite: https://careers.manychat.com/",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "microsoft",
+          "topic": "Welcome to the channel of our Platinum sponsor Microsoft!\n\nWebsite: https://www.microsoft.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "vercel",
+          "topic": "Welcome to the channel of our Platinum sponsor Vercel!\n\nWebsite: https://vercel.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "activecampaign",
+          "topic": "Welcome to the channel of our Gold sponsor ActiveCampaign!\n\nWebsite: https://www.activecampaign.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "apify",
+          "topic": "Welcome to the channel of our Gold sponsor Apify!\n\nWebsite: https://apify.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "arm",
+          "topic": "Welcome to the channel of our Gold sponsor arm!\n\nWebsite: https://www.arm.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "back-market",
+          "topic": "Welcome to the channel of our Gold sponsor Back Market!\n\nWebsite: https://www.backmarket.com/en-us",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "bcg-x",
+          "topic": "Welcome to the channel of our Gold sponsor BCG X!\n\nWebsite: https://bcg.com/x",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "bloomberg",
+          "topic": "Welcome to the channel of our Gold sponsor Bloomberg!\n\nWebsite: https://www.bloomberg.com/company/values/tech-at-bloomberg/python/",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "google-cloud",
+          "topic": "Welcome to the channel of our Gold sponsor Google Cloud!\n\nWebsite: https://cloud.google.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "hudson-river-trading",
+          "topic": "Welcome to the channel of our Gold sponsor Hudson River Trading!\n\nWebsite: https://www.hudsonrivertrading.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "jetbrains",
+          "topic": "Welcome to the channel of our Gold sponsor JetBrains!\n\nWebsite: https://www.jetbrains.com/pycharm/",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "modal",
+          "topic": "Welcome to the channel of our Gold sponsor Modal!\n\nWebsite: https://modal.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "numberly",
+          "topic": "Welcome to the channel of our Gold sponsor Numberly!\n\nWebsite: https://numberly.tech",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "openedg-python-institute",
+          "topic": "Welcome to the channel of our Gold sponsor OpenEDG | Python Institute!\n\nWebsite: https://pythoninstitute.org/",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "optiver",
+          "topic": "Welcome to the channel of our Gold sponsor Optiver!\n\nWebsite: https://optiver.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        },
+        {
+          "type": "text",
+          "name": "revolut",
+          "topic": "Welcome to the channel of our Gold sponsor Revolut!\n\nWebsite: https://www.revolut.com",
+          "permission_overwrites": [],
+          "channel_messages": []
+        }
+      ],
       "permission_overwrites": [
         {
           "roles": [
