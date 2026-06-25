@@ -292,7 +292,7 @@
         {
           "type": "text",
           "name": "ask-the-locals",
-          "topic": "The right place to ask locals for help and experience.\nMany people recommended the YouTube channel 'HONEST GUIDE', maybe you find it helpful as well: https://www.youtube.com/@HONESTGUIDE",
+          "topic": "The right place to ask locals for help and experience.",
           "permission_overwrites": [],
           "channel_messages": []
         },
