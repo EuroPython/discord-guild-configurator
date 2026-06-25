@@ -398,7 +398,7 @@ CONFIG = GuildConfig(
                 TextChannel(
                     name="arm",
                     topic="""
-                    Welcome to the channel of our Gold sponsor arm!
+                    Welcome to the channel of our Gold sponsor Arm!
 
                     Website: https://www.arm.com
                     """,

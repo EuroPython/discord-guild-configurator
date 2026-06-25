@@ -399,7 +399,7 @@
         {
           "type": "text",
           "name": "arm",
-          "topic": "Welcome to the channel of our Gold sponsor arm!\n\nWebsite: https://www.arm.com",
+          "topic": "Welcome to the channel of our Gold sponsor Arm!\n\nWebsite: https://www.arm.com",
           "permission_overwrites": [],
           "channel_messages": []
         },
