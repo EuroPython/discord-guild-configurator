@@ -165,7 +165,8 @@
           "topic": "Please read the rules carefully!",
           "permission_overwrites": [],
           "channel_messages": [
-            "## Community Rules\n\n**Rule 1**\nFollow the [EuroPython Society Code of Conduct](https://www.europython-society.org/coc/).\n**Rule 2**\nUse English to the best of your ability. Be polite if someone speaks English imperfectly.\n**Rule 3**\nUse the name on your ticket as your display name. Your server-wide nickname will be updated automatically during the registration process.\n**Rule 4**\nWhen posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.\nSee also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)\n\n**Reporting Incidents**\nIf you notice something that needs the attention of a moderator of the community, please ping the <<@&Organisers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.\nSee the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.\n\n**Registration**\nIf you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels."
+            "## Community Rules\n\n**Rule 1**\nFollow the [EuroPython Society Code of Conduct](https://www.europython-society.org/coc/).\n**Rule 2**\nUse English to the best of your ability. Be polite if someone speaks English imperfectly.\n**Rule 3**\nUse the name on your ticket as your display name. Your server-wide nickname will be updated automatically during the registration process.\n**Rule 4**\nWhen posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.\nSee also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)\n\n**Reporting Incidents**\nIf you notice something that needs the attention of a moderator of the community, please ping the <<@&Organisers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.\nSee the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.\n\n**Registration**\nIf you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels.",
+            "**Next step:** Please proceed to <<#registration-form>> to complete your registration."
           ]
         },
         {
@@ -856,7 +857,7 @@
         {
           "type": "text",
           "name": "registration-form",
-          "topic": "Please follow the registration instructions.",
+          "topic": "Please follow the registration instructions. Enter the Order Code from your ticket email.",
           "permission_overwrites": [
             {
               "roles": [
@@ -896,7 +897,9 @@
               "deny": []
             }
           ],
-          "channel_messages": []
+          "channel_messages": [
+            "## Registration\n\nTo register, please use the form below.\n\nEnter the **Order Code** from your ticket email to register."
+          ]
         },
         {
           "type": "forum",

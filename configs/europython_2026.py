@@ -183,6 +183,10 @@ CONFIG = GuildConfig(
                         **Registration**
                         If you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels.
                         """  # noqa: E501 (line too long)
+                        ,
+                        """
+                        **Next step:** Please proceed to <<#registration-form>> to complete your registration.
+                        """,
                     ],
                 ),
                 TextChannel(
@@ -659,7 +663,16 @@ CONFIG = GuildConfig(
             channels=[
                 TextChannel(
                     name="registration-form",
-                    topic="Please follow the registration instructions.",
+                    topic="Please follow the registration instructions. Enter the Order Code from your ticket email.",
+                    channel_messages=[
+                        """
+                        ## Registration
+
+                        To register, please use the form below.
+
+                        Enter the **Order Code** from your ticket email to register.
+                        """,
+                    ],
                     permission_overwrites=[
                         PermissionOverwrite(
                             roles=[ROLE_EVERYONE], deny=["send_messages", "create_public_threads"]
