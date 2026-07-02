@@ -254,6 +254,8 @@ CONFIG = GuildConfig(
                     ],
                     require_tag=True,
                     permission_overwrites=[
+                        PermissionOverwrite(roles=[ROLE_EVERYONE], deny=["view_channel"]),
+                        PermissionOverwrite(roles=ROLES_REGISTERED, allow=["view_channel"]),
                         PermissionOverwrite(
                             roles=ROLES_SPONSORS, allow=["send_messages", "create_public_threads"]
                         ),

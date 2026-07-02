@@ -187,6 +187,31 @@
           "permission_overwrites": [
             {
               "roles": [
+                "@everyone"
+              ],
+              "allow": [],
+              "deny": [
+                "view_channel"
+              ]
+            },
+            {
+              "roles": [
+                "Participants",
+                "Sponsors",
+                "Speakers",
+                "Volunteers",
+                "Organizers",
+                "Moderators",
+                "Code of Conduct Committee",
+                "Beginners Day"
+              ],
+              "allow": [
+                "view_channel"
+              ],
+              "deny": []
+            },
+            {
+              "roles": [
                 "Sponsors",
                 "Organizers",
                 "Moderators",
