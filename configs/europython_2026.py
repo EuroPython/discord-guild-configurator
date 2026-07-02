@@ -112,6 +112,7 @@ CONFIG = GuildConfig(
         ),
         Role(name="Onsite Participants", color=COLOR_GREY),
         Role(name="Remote Participants", color=COLOR_GREY),
+        Role(name="Community Organisers", color=COLOR_GREY),
         Role(
             name=ROLE_BEGINNERS_DAY,
             color=COLOR_DARK_PURPLE,
@@ -347,6 +348,10 @@ CONFIG = GuildConfig(
                         "A place to share pictures and stories about "
                         "your pets, or animals in general :heart:"
                     ),
+                ),
+                TextChannel(
+                    name="community-organisers",
+                    topic="Channel related to the Community Organizers Summit Events",
                 ),
             ],
             permission_overwrites=[
