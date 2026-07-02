@@ -179,6 +179,9 @@ CONFIG = GuildConfig(
                         If you notice something that needs the attention of a moderator of the community, please ping the <<@&Moderators>> role.
 
                         Note that not all moderators are a member of the EuroPython Code of Conduct team. See the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.
+
+                        **Registration**
+                        If you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels.
                         """  # noqa: E501 (line too long)
                     ],
                 ),
@@ -645,24 +648,6 @@ CONFIG = GuildConfig(
         Category(
             name="Registration",
             channels=[
-                TextChannel(
-                    name="welcome",
-                    topic="Welcome to our server, please register.",
-                    channel_messages=[
-                        """
-                        **Welcome to our Discord server! Please register using the <<#registration-form>>**
-
-                        If you encounter any problems with registration, please ask in <<#registration-help>>.
-                        """,  # noqa: E501 (line too long)
-                    ],
-                    permission_overwrites=[
-                        PermissionOverwrite(
-                            roles=[ROLE_EVERYONE], deny=["send_messages", "create_public_threads"]
-                        ),
-                        PermissionOverwrite(roles=ROLES_REGISTERED, deny=["view_channel"]),
-                        PermissionOverwrite(roles=ROLES_ORGANIZERS, allow=["view_channel"]),
-                    ],
-                ),
                 TextChannel(
                     name="registration-form",
                     topic="Please follow the registration instructions.",

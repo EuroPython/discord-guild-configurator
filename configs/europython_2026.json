@@ -158,7 +158,7 @@
           "topic": "Please read the rules carefully!",
           "permission_overwrites": [],
           "channel_messages": [
-            "## Community Rules\n\n**Rule 1**\nFollow the [EuroPython Society Code of Conduct](https://www.europython-society.org/coc/).\n**Rule 2**\nUse English to the best of your ability. Be polite if someone speaks English imperfectly.\n**Rule 3**\nUse the name on your ticket as your display name. This will be done automatically during the #registration-form process.\n**Rule 4**\nWhen posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.\nSee also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)\n\n**Reporting Incidents**\nIf you notice something that needs the attention of a moderator of the community, please ping the <<@&Moderators>> role.\n\nNote that not all moderators are a member of the EuroPython Code of Conduct team. See the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents."
+            "## Community Rules\n\n**Rule 1**\nFollow the [EuroPython Society Code of Conduct](https://www.europython-society.org/coc/).\n**Rule 2**\nUse English to the best of your ability. Be polite if someone speaks English imperfectly.\n**Rule 3**\nUse the name on your ticket as your display name. This will be done automatically during the #registration-form process.\n**Rule 4**\nWhen posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.\nSee also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)\n\n**Reporting Incidents**\nIf you notice something that needs the attention of a moderator of the community, please ping the <<@&Moderators>> role.\n\nNote that not all moderators are a member of the EuroPython Code of Conduct team. See the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.\n\n**Registration**\nIf you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels."
           ]
         },
         {
@@ -814,53 +814,6 @@
     {
       "name": "Registration",
       "channels": [
-        {
-          "type": "text",
-          "name": "welcome",
-          "topic": "Welcome to our server, please register.",
-          "permission_overwrites": [
-            {
-              "roles": [
-                "@everyone"
-              ],
-              "allow": [],
-              "deny": [
-                "send_messages",
-                "create_public_threads"
-              ]
-            },
-            {
-              "roles": [
-                "Participants",
-                "Sponsors",
-                "Speakers",
-                "Volunteers",
-                "Organizers",
-                "Moderators",
-                "Code of Conduct Committee",
-                "Beginners Day"
-              ],
-              "allow": [],
-              "deny": [
-                "view_channel"
-              ]
-            },
-            {
-              "roles": [
-                "Organizers",
-                "Moderators",
-                "Code of Conduct Committee"
-              ],
-              "allow": [
-                "view_channel"
-              ],
-              "deny": []
-            }
-          ],
-          "channel_messages": [
-            "**Welcome to our Discord server! Please register using the <<#registration-form>>**\n\nIf you encounter any problems with registration, please ask in <<#registration-help>>."
-          ]
-        },
         {
           "type": "text",
           "name": "registration-form",
