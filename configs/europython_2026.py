@@ -347,8 +347,11 @@ CONFIG = GuildConfig(
                 TextChannel(
                     name="animal-appreciation",
                     topic=(
-                        "A place to share pictures and stories about "
-                        "your pets, or animals in general :heart:"
+                        """
+                        A place to share pictures and stories about your pets, or animals in general :heart:
+
+                        No animal in sight? Don't despair, you can try $cat, $dog, $duck, or $fox.
+                        """  # noqa: E501 (line too long)
                     ),
                 ),
                 TextChannel(

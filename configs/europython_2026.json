@@ -357,7 +357,7 @@
         {
           "type": "text",
           "name": "animal-appreciation",
-          "topic": "A place to share pictures and stories about your pets, or animals in general :heart:",
+          "topic": "A place to share pictures and stories about your pets, or animals in general :heart:\n\nNo animal in sight? Don't despair, you can try $cat, $dog, $duck, or $fox.",
           "permission_overwrites": [],
           "channel_messages": []
         },
