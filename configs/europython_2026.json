@@ -398,13 +398,6 @@
         },
         {
           "type": "text",
-          "name": "arm",
-          "topic": "Welcome to the channel of our Gold sponsor Arm!\n\nWebsite: https://www.arm.com",
-          "permission_overwrites": [],
-          "channel_messages": []
-        },
-        {
-          "type": "text",
           "name": "back-market",
           "topic": "Welcome to the channel of our Gold sponsor Back Market!\n\nWebsite: https://www.backmarket.com/en-us",
           "permission_overwrites": [],

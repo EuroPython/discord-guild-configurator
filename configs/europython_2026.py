@@ -396,14 +396,6 @@ CONFIG = GuildConfig(
                     """,
                 ),
                 TextChannel(
-                    name="arm",
-                    topic="""
-                    Welcome to the channel of our Gold sponsor Arm!
-
-                    Website: https://www.arm.com
-                    """,
-                ),
-                TextChannel(
                     name="back-market",
                     topic="""
                     Welcome to the channel of our Gold sponsor Back Market!
