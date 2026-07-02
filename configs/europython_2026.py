@@ -170,15 +170,14 @@ CONFIG = GuildConfig(
                         **Rule 2**
                         Use English to the best of your ability. Be polite if someone speaks English imperfectly.
                         **Rule 3**
-                        Use the name on your ticket as your display name. This will be done automatically during the #registration-form process.
+                        Use the name on your ticket as your display name. Your server-wide nickname will be updated automatically during the registration process.
                         **Rule 4**
                         When posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.
                         See also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)
 
                         **Reporting Incidents**
-                        If you notice something that needs the attention of a moderator of the community, please ping the <<@&Moderators>> role.
-
-                        Note that not all moderators are a member of the EuroPython Code of Conduct team. See the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.
+                        If you notice something that needs the attention of a moderator of the community, please ping the <<@&Organizers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.
+                        See the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.
 
                         **Registration**
                         If you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels.
