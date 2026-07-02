@@ -29,7 +29,7 @@
       ]
     },
     {
-      "name": "Organizers",
+      "name": "Organisers",
       "color": "#BC8C15",
       "hoist": false,
       "mentionable": false,
@@ -165,7 +165,7 @@
           "topic": "Please read the rules carefully!",
           "permission_overwrites": [],
           "channel_messages": [
-            "## Community Rules\n\n**Rule 1**\nFollow the [EuroPython Society Code of Conduct](https://www.europython-society.org/coc/).\n**Rule 2**\nUse English to the best of your ability. Be polite if someone speaks English imperfectly.\n**Rule 3**\nUse the name on your ticket as your display name. Your server-wide nickname will be updated automatically during the registration process.\n**Rule 4**\nWhen posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.\nSee also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)\n\n**Reporting Incidents**\nIf you notice something that needs the attention of a moderator of the community, please ping the <<@&Organizers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.\nSee the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.\n\n**Registration**\nIf you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels."
+            "## Community Rules\n\n**Rule 1**\nFollow the [EuroPython Society Code of Conduct](https://www.europython-society.org/coc/).\n**Rule 2**\nUse English to the best of your ability. Be polite if someone speaks English imperfectly.\n**Rule 3**\nUse the name on your ticket as your display name. Your server-wide nickname will be updated automatically during the registration process.\n**Rule 4**\nWhen posting pictures, please keep visually impaired attendees in mind. A short description can make a big difference.\nSee also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)\n\n**Reporting Incidents**\nIf you notice something that needs the attention of a moderator of the community, please ping the <<@&Organisers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.\nSee the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.\n\n**Registration**\nIf you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels."
           ]
         },
         {
@@ -183,7 +183,7 @@
         {
           "type": "forum",
           "name": "job-board",
-          "topic": "Make sure your job openings follows the following rules:\n\n1. Title: A clear and concise title including the role and the Company/Organization\n2. Job Type: Indicate whether the job is full-time, part-time, contract-based, freelance, or an internship.\n3. Job Description: Provide a URL or text explaining the job.\n4. Application Deadline: If there is a specific deadline for applications, mention it in the post.\n5. Salary/Compensation: If possible and appropriate, include salary or compensation details.\n6. Additional Information: stuff like:  perks, or notable company culture, include them in the post.\n7. Relevant Tags: Use relevant tags or keywords to categorize the job post. Please let us know if important tags are missing.\n8. No Discrimination: Ensure that the job post does not include any discriminatory language or requirements.\n9. Updates and Removal: If the job position is filled or no longer available, update or remove the post to avoid confusion for job seekers.",
+          "topic": "Make sure your job openings follows the following rules:\n\n1. Title: A clear and concise title including the role and the Company/Organisation\n2. Job Type: Indicate whether the job is full-time, part-time, contract-based, freelance, or an internship.\n3. Job Description: Provide a URL or text explaining the job.\n4. Application Deadline: If there is a specific deadline for applications, mention it in the post.\n5. Salary/Compensation: If possible and appropriate, include salary or compensation details.\n6. Additional Information: stuff like:  perks, or notable company culture, include them in the post.\n7. Relevant Tags: Use relevant tags or keywords to categorise the job post. Please let us know if important tags are missing.\n8. No Discrimination: Ensure that the job post does not include any discriminatory language or requirements.\n9. Updates and Removal: If the job position is filled or no longer available, update or remove the post to avoid confusion for job seekers.",
           "permission_overwrites": [
             {
               "roles": [
@@ -200,7 +200,7 @@
                 "Sponsors",
                 "Speakers",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Beginners Day"
@@ -213,7 +213,7 @@
             {
               "roles": [
                 "Sponsors",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -278,7 +278,7 @@
             },
             {
               "roles": [
-                "Organizers"
+                "Organisers"
               ],
               "allow": [
                 "send_messages"
@@ -298,7 +298,7 @@
         {
           "type": "forum",
           "name": "support",
-          "topic": "Use this forum channel to create support tickets if you **need support from the conference organization**. Please don't open forum threads related to other topics, as that makes it difficult for the organizers to keep track of support tickets that need their attention.\n\nIf you to make a report to the Code of Conduct Committee, please use coc@europython.eu or contact an organizer at the conference.",
+          "topic": "Use this forum channel to create support tickets if you **need support from the conference organisation**. Please don't open forum threads related to other topics, as that makes it difficult for the organisers to keep track of support tickets that need their attention.\n\nIf you to make a report to the Code of Conduct Committee, please use coc@europython.eu or contact an organiser at the conference.",
           "permission_overwrites": [],
           "tags": [
             "Remote Support",
@@ -339,7 +339,7 @@
         {
           "type": "forum",
           "name": "social-activities",
-          "topic": "# Social Activities organized by and for attendees\nYou can use this channel to organize a social activity with other attendees of the conference. Do note that EuroPython only provides a space for attendees to coordinate social activities, it does not officially endorse activities posted here.\n\n## topic for a good post\n- Use a **descriptive title** that captures the core of your activity\n- If relevant, **include the date and time in your title**\n- Indicate if your activity is **in-person** or **remote** by selecting the appropriate tag",
+          "topic": "# Social Activities organised by and for attendees\nYou can use this channel to organise a social activity with other attendees of the conference. Do note that EuroPython only provides a space for attendees to coordinate social activities, it does not officially endorse activities posted here.\n\n## topic for a good post\n- Use a **descriptive title** that captures the core of your activity\n- If relevant, **include the date and time in your title**\n- Indicate if your activity is **in-person** or **remote** by selecting the appropriate tag",
           "permission_overwrites": [],
           "tags": [
             "In Person",
@@ -364,7 +364,7 @@
         {
           "type": "text",
           "name": "community-organisers",
-          "topic": "Channel related to the Community Organizers Summit Events",
+          "topic": "Channel related to the Community Organisers Summit Events",
           "permission_overwrites": [],
           "channel_messages": []
         }
@@ -385,7 +385,7 @@
             "Sponsors",
             "Speakers",
             "Volunteers",
-            "Organizers",
+            "Organisers",
             "Moderators",
             "Code of Conduct Committee",
             "Beginners Day"
@@ -529,7 +529,7 @@
             "Sponsors",
             "Speakers",
             "Volunteers",
-            "Organizers",
+            "Organisers",
             "Moderators",
             "Code of Conduct Committee",
             "Beginners Day"
@@ -621,7 +621,7 @@
                 "Sponsors",
                 "Speakers",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Beginners Day"
@@ -634,7 +634,7 @@
             {
               "roles": [
                 "Speakers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -666,7 +666,7 @@
                 "Sponsors",
                 "Speakers",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Beginners Day"
@@ -679,7 +679,7 @@
             {
               "roles": [
                 "Speakers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -709,7 +709,7 @@
             "Sponsors",
             "Speakers",
             "Volunteers",
-            "Organizers",
+            "Organisers",
             "Moderators",
             "Code of Conduct Committee",
             "Beginners Day"
@@ -722,7 +722,7 @@
       ]
     },
     {
-      "name": "Conference Organization",
+      "name": "Conference Organisation",
       "channels": [
         {
           "type": "text",
@@ -732,7 +732,7 @@
             {
               "roles": [
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -752,7 +752,7 @@
             {
               "roles": [
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -772,11 +772,11 @@
             {
               "roles": [
                 "Sponsors",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -796,11 +796,11 @@
             {
               "roles": [
                 "Speakers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -874,7 +874,7 @@
                 "Sponsors",
                 "Speakers",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Beginners Day"
@@ -886,7 +886,7 @@
             },
             {
               "roles": [
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -909,7 +909,7 @@
                 "Sponsors",
                 "Speakers",
                 "Volunteers",
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee",
                 "Beginners Day"
@@ -921,7 +921,7 @@
             },
             {
               "roles": [
-                "Organizers",
+                "Organisers",
                 "Moderators",
                 "Code of Conduct Committee"
               ],
@@ -981,5 +981,5 @@
   "verification_level": "medium",
   "default_notifications": "only_mentions",
   "explicit_content_filter": "all_members",
-  "preferred_locale": "american_english"
+  "preferred_locale": "british_english"
 }

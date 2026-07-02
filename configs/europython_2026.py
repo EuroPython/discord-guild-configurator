@@ -13,18 +13,18 @@ from discord_guild_configurator.models import (
     TextChannel,
 )
 
-COLOR_BLUE = "#0096C7"
-COLOR_LIGHT_BLUE = "#8FD3E0"
-COLOR_DARK_ORANGE = "#E6412C"
-COLOR_ORANGE = "#E85D04"
-COLOR_DARK_YELLOW = "#BC8C15"
-COLOR_YELLOW = "#FFD700"
-COLOR_PURPLE = "#D34EA5"
-COLOR_GREY = "#99AAB5"
-COLOR_DARK_PURPLE = "#658B34"
+COLOUR_BLUE = "#0096C7"
+COLOUR_LIGHT_BLUE = "#8FD3E0"
+COLOUR_DARK_ORANGE = "#E6412C"
+COLOUR_ORANGE = "#E85D04"
+COLOUR_DARK_YELLOW = "#BC8C15"
+COLOUR_YELLOW = "#FFD700"
+COLOUR_PURPLE = "#D34EA5"
+COLOUR_GREY = "#99AAB5"
+COLOUR_DARK_PURPLE = "#658B34"
 ROLE_COC = "Code of Conduct Committee"
 ROLE_MODERATORS = "Moderators"
-ROLE_ORGANIZERS = "Organizers"
+ROLE_ORGANISERS = "Organisers"
 ROLE_VOLUNTEERS = "Volunteers"
 ROLE_SPEAKERS = "Speakers"
 ROLE_SPONSORS = "Sponsors"
@@ -33,10 +33,10 @@ ROLE_EVERYONE = "@everyone"
 ROLE_BEGINNERS_DAY = "Beginners Day"
 ROLES_COC = [ROLE_COC]
 ROLES_MODERATORS = [ROLE_MODERATORS, *ROLES_COC]
-ROLES_ORGANIZERS = [ROLE_ORGANIZERS, *ROLES_MODERATORS]
-ROLES_VOLUNTEERS = [ROLE_VOLUNTEERS, *ROLES_ORGANIZERS]
-ROLES_SPEAKERS = [ROLE_SPEAKERS, *ROLES_ORGANIZERS]
-ROLES_SPONSORS = [ROLE_SPONSORS, *ROLES_ORGANIZERS]
+ROLES_ORGANISERS = [ROLE_ORGANISERS, *ROLES_MODERATORS]
+ROLES_VOLUNTEERS = [ROLE_VOLUNTEERS, *ROLES_ORGANISERS]
+ROLES_SPEAKERS = [ROLE_SPEAKERS, *ROLES_ORGANISERS]
+ROLES_SPONSORS = [ROLE_SPONSORS, *ROLES_ORGANISERS]
 ROLES_REGISTERED = [
     ROLE_PARTICIPANTS,
     ROLE_SPONSORS,
@@ -48,11 +48,11 @@ CONFIG = GuildConfig(
     verification_level=discord.VerificationLevel.medium,
     default_notifications=discord.NotificationLevel.only_mentions,
     explicit_content_filter=discord.ContentFilter.all_members,
-    preferred_locale=discord.Locale.american_english,
+    preferred_locale=discord.Locale.british_english,
     roles=[
         Role(
             name=ROLE_COC,
-            color=COLOR_DARK_ORANGE,
+            color=COLOUR_DARK_ORANGE,
             hoist=True,
             mentionable=True,
             permissions=[
@@ -65,7 +65,7 @@ CONFIG = GuildConfig(
         ),
         Role(
             name=ROLE_MODERATORS,
-            color=COLOR_ORANGE,
+            color=COLOUR_ORANGE,
             hoist=True,
             mentionable=True,
             permissions=[
@@ -79,50 +79,50 @@ CONFIG = GuildConfig(
             ],
         ),
         Role(
-            name=ROLE_ORGANIZERS,
-            color=COLOR_DARK_YELLOW,
+            name=ROLE_ORGANISERS,
+            color=COLOUR_DARK_YELLOW,
             permissions=["mention_everyone", "use_external_apps", "manage_roles"],
         ),
         Role(
             name=ROLE_VOLUNTEERS,
-            color=COLOR_YELLOW,
+            color=COLOUR_YELLOW,
             hoist=True,
             mentionable=True,
         ),
-        Role(name="Onsite Volunteers", color=COLOR_GREY),
-        Role(name="Remote Volunteers", color=COLOR_GREY),
+        Role(name="Onsite Volunteers", color=COLOUR_GREY),
+        Role(name="Remote Volunteers", color=COLOUR_GREY),
         Role(
             name=ROLE_SPEAKERS,
-            color=COLOR_BLUE,
+            color=COLOUR_BLUE,
             hoist=True,
             mentionable=True,
         ),
         Role(
             name=ROLE_SPONSORS,
-            color=COLOR_LIGHT_BLUE,
+            color=COLOUR_LIGHT_BLUE,
             hoist=True,
             mentionable=True,
         ),
         Role(
             name=ROLE_PARTICIPANTS,
-            color=COLOR_PURPLE,
+            color=COLOUR_PURPLE,
             hoist=True,
             mentionable=True,
             permissions=["use_external_emojis", "use_external_stickers", "create_polls"],
         ),
-        Role(name="Onsite Participants", color=COLOR_GREY),
-        Role(name="Remote Participants", color=COLOR_GREY),
-        Role(name="Community Organisers", color=COLOR_GREY),
+        Role(name="Onsite Participants", color=COLOUR_GREY),
+        Role(name="Remote Participants", color=COLOUR_GREY),
+        Role(name="Community Organisers", color=COLOUR_GREY),
         Role(
             name=ROLE_BEGINNERS_DAY,
-            color=COLOR_DARK_PURPLE,
+            color=COLOUR_DARK_PURPLE,
             mentionable=True,
             permissions=["use_external_emojis", "use_external_stickers", "create_polls"],
         ),
-        Role(name="Programme Team", color=COLOR_GREY, mentionable=True),
+        Role(name="Programme Team", color=COLOUR_GREY, mentionable=True),
         Role(
             name="@everyone",
-            color=COLOR_GREY,
+            color=COLOUR_GREY,
             permissions=[
                 "view_channel",
                 "change_nickname",
@@ -177,7 +177,7 @@ CONFIG = GuildConfig(
                         See also: [Discord - Add Alt Text To Your Image Upload](https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs#h_01GWWTHYJEV2S1WCDGFEMY21AQ)
 
                         **Reporting Incidents**
-                        If you notice something that needs the attention of a moderator of the community, please ping the <<@&Organizers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.
+                        If you notice something that needs the attention of a moderator of the community, please ping the <<@&Organisers>> or <<@&Code of Conduct Committee>> role, or speak to a volunteer in a yellow T-shirt.
                         See the <<#code-of-conduct>> channel to read how you can report Code of Conduct incidents.
 
                         **Registration**
@@ -225,13 +225,13 @@ CONFIG = GuildConfig(
                     topic="""
                         Make sure your job openings follows the following rules:
 
-                        1. Title: A clear and concise title including the role and the Company/Organization
+                        1. Title: A clear and concise title including the role and the Company/Organisation
                         2. Job Type: Indicate whether the job is full-time, part-time, contract-based, freelance, or an internship.
                         3. Job Description: Provide a URL or text explaining the job.
                         4. Application Deadline: If there is a specific deadline for applications, mention it in the post.
                         5. Salary/Compensation: If possible and appropriate, include salary or compensation details.
                         6. Additional Information: stuff like:  perks, or notable company culture, include them in the post.
-                        7. Relevant Tags: Use relevant tags or keywords to categorize the job post. Please let us know if important tags are missing.
+                        7. Relevant Tags: Use relevant tags or keywords to categorise the job post. Please let us know if important tags are missing.
                         8. No Discrimination: Ensure that the job post does not include any discriminatory language or requirements.
                         9. Updates and Removal: If the job position is filled or no longer available, update or remove the post to avoid confusion for job seekers.
                         """,  # noqa: E501 (line too long)
@@ -279,7 +279,7 @@ CONFIG = GuildConfig(
                         PermissionOverwrite(
                             roles=[ROLE_EVERYONE], deny=["send_messages", "create_public_threads"]
                         ),
-                        PermissionOverwrite(roles=[ROLE_ORGANIZERS], allow=["send_messages"]),
+                        PermissionOverwrite(roles=[ROLE_ORGANISERS], allow=["send_messages"]),
                     ],
                 ),
                 TextChannel(
@@ -292,9 +292,9 @@ CONFIG = GuildConfig(
                 ForumChannel(
                     name="support",
                     topic="""
-                        Use this forum channel to create support tickets if you **need support from the conference organization**. Please don't open forum threads related to other topics, as that makes it difficult for the organizers to keep track of support tickets that need their attention.
+                        Use this forum channel to create support tickets if you **need support from the conference organisation**. Please don't open forum threads related to other topics, as that makes it difficult for the organisers to keep track of support tickets that need their attention.
 
-                        If you to make a report to the Code of Conduct Committee, please use coc@europython.eu or contact an organizer at the conference.
+                        If you to make a report to the Code of Conduct Committee, please use coc@europython.eu or contact an organiser at the conference.
                         """,  # noqa: E501 (line too long)
                     tags=["Remote Support", "On-Site Support"],
                     require_tag=True,
@@ -326,8 +326,8 @@ CONFIG = GuildConfig(
                 ForumChannel(
                     name="social-activities",
                     topic="""
-                        # Social Activities organized by and for attendees
-                        You can use this channel to organize a social activity with other attendees of the conference. Do note that EuroPython only provides a space for attendees to coordinate social activities, it does not officially endorse activities posted here.
+                        # Social Activities organised by and for attendees
+                        You can use this channel to organise a social activity with other attendees of the conference. Do note that EuroPython only provides a space for attendees to coordinate social activities, it does not officially endorse activities posted here.
 
                         ## topic for a good post
                         - Use a **descriptive title** that captures the core of your activity
@@ -353,7 +353,7 @@ CONFIG = GuildConfig(
                 ),
                 TextChannel(
                     name="community-organisers",
-                    topic="Channel related to the Community Organizers Summit Events",
+                    topic="Channel related to the Community Organisers Summit Events",
                 ),
             ],
             permission_overwrites=[
@@ -576,7 +576,7 @@ CONFIG = GuildConfig(
             ],
         ),
         Category(
-            name="Conference Organization",
+            name="Conference Organisation",
             channels=[
                 TextChannel(
                     name="announcements-volunteers",
@@ -662,7 +662,7 @@ CONFIG = GuildConfig(
                             roles=[ROLE_EVERYONE], deny=["send_messages", "create_public_threads"]
                         ),
                         PermissionOverwrite(roles=ROLES_REGISTERED, deny=["view_channel"]),
-                        PermissionOverwrite(roles=ROLES_ORGANIZERS, allow=["view_channel"]),
+                        PermissionOverwrite(roles=ROLES_ORGANISERS, allow=["view_channel"]),
                     ],
                 ),
                 ForumChannel(
@@ -674,7 +674,7 @@ CONFIG = GuildConfig(
                         """,  # noqa: E501 (line too long)
                     permission_overwrites=[
                         PermissionOverwrite(roles=ROLES_REGISTERED, deny=["view_channel"]),
-                        PermissionOverwrite(roles=ROLES_ORGANIZERS, allow=["view_channel"]),
+                        PermissionOverwrite(roles=ROLES_ORGANISERS, allow=["view_channel"]),
                     ],
                 ),
                 TextChannel(
