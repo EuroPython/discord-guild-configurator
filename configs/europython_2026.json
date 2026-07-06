@@ -36,7 +36,8 @@
       "permissions": [
         "mention_everyone",
         "use_external_apps",
-        "manage_roles"
+        "manage_roles",
+        "pin_messages"
       ]
     },
     {

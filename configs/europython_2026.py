@@ -81,7 +81,12 @@ CONFIG = GuildConfig(
         Role(
             name=ROLE_ORGANISERS,
             color=COLOUR_DARK_YELLOW,
-            permissions=["mention_everyone", "use_external_apps", "manage_roles"],
+            permissions=[
+                "mention_everyone",
+                "use_external_apps",
+                "manage_roles",
+                "pin_messages",
+            ],
         ),
         Role(
             name=ROLE_VOLUNTEERS,
