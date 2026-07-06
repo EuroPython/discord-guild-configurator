@@ -451,13 +451,6 @@
         },
         {
           "type": "text",
-          "name": "bloomberg",
-          "topic": "Welcome to the channel of our Gold sponsor Bloomberg!\n\nWebsite: https://www.bloomberg.com/company/values/tech-at-bloomberg/python/",
-          "permission_overwrites": [],
-          "channel_messages": []
-        },
-        {
-          "type": "text",
           "name": "google-cloud",
           "topic": "Welcome to the channel of our Gold sponsor Google Cloud!\n\nWebsite: https://cloud.google.com",
           "permission_overwrites": [],

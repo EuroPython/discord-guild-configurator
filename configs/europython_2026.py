@@ -424,14 +424,6 @@ CONFIG = GuildConfig(
                     """,
                 ),
                 TextChannel(
-                    name="bloomberg",
-                    topic="""
-                    Welcome to the channel of our Gold sponsor Bloomberg!
-
-                    Website: https://www.bloomberg.com/company/values/tech-at-bloomberg/python/
-                    """,
-                ),
-                TextChannel(
                     name="google-cloud",
                     topic="""
                     Welcome to the channel of our Gold sponsor Google Cloud!
