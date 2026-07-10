@@ -484,6 +484,16 @@ CONFIG = GuildConfig(
                     ],
                 ),
                 TextChannel(
+                    name="runner-requests",
+                    topic="Coordination of Runner tasks",
+                    permission_overwrites=[
+                        PermissionOverwrite(
+                            roles=ROLES_VOLUNTEERS,
+                            allow=["view_channel"],
+                        ),
+                    ],
+                ),
+                TextChannel(
                     name="sponsors-lounge",
                     topic=(
                         "Social chat for sponsors. Please follow the #rules and #code-of-conduct!"
