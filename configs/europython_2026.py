@@ -500,7 +500,7 @@ CONFIG = GuildConfig(
                     ),
                     permission_overwrites=[
                         PermissionOverwrite(
-                            roles=[*ROLES_SPONSORS, *ROLES_VOLUNTEERS],
+                            roles=[*ROLES_SPONSORS, *ROLES_ORGANISERS],
                             allow=["view_channel"],
                         ),
                     ],
