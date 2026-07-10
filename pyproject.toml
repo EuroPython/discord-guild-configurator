@@ -16,14 +16,14 @@ dependencies = [
 discord-guild-configurator = "discord_guild_configurator.main:main"
 
 [build-system]
-requires = ["uv_build>=0.11.25,<0.12.0"]
+requires = ["uv_build>=0.11.26,<0.12.0"]
 build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
-    "prek>=0.4.6",
-    "ruff>=0.15.20",
-    "ty>=0.0.56",
+    "prek>=0.4.8",
+    "ruff>=0.15.21",
+    "ty>=0.0.58",
 ]
 
 [tool.ty.terminal]
@@ -55,28 +55,28 @@ ignore = [
     "D107",
 ]
 fixable = [
-    "TC",  # type checking
-    "ANN",  # type annotations
-    "F401",  # unused imports
-    "I001",  # unsorted imports
-    "UP",  # pyupgrade
-    "PLR1730",  # if min/max over if else
-    "RET505",  # superfluous else-return
-    "PLR5501",  # collapse else-if into elif
-    "F541",  # superfluous f-string prefix
-    "F841",  # unused variable
-    "B007",  # unused loop variable
-    "PIE790",  # unnecessary pass
-    "Q003",  # change single/double quotes
+    "TC", # type checking
+    "ANN", # type annotations
+    "F401", # unused imports
+    "I001", # unsorted imports
+    "UP", # pyupgrade
+    "PLR1730", # if min/max over if else
+    "RET505", # superfluous else-return
+    "PLR5501", # collapse else-if into elif
+    "F541", # superfluous f-string prefix
+    "F841", # unused variable
+    "B007", # unused loop variable
+    "PIE790", # unnecessary pass
+    "Q003", # change single/double quotes
 ]
 
 [tool.ruff.lint.per-file-ignores]
 "configs/*" = [
-    "INP001",  # no `__init__.py`
+    "INP001", # no `__init__.py`
 ]
 "scripts/*" = [
-    "INP001",  # no `__init__.py`
-    "T201",  # print
+    "INP001", # no `__init__.py`
+    "T201", # print
 ]
 
 [tool.ruff.lint.pydocstyle]
