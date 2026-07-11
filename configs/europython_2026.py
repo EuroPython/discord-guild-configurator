@@ -187,6 +187,7 @@ CONFIG = GuildConfig(
 
                         **Registration**
                         If you haven't registered yet, please go to <<#registration-form>> to get access to Conference channels.
+                        If that link shows as "No Access", you successfully registered.
                         """  # noqa: E501 (line too long)
                     ],
                 ),
