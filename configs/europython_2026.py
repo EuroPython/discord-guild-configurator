@@ -303,7 +303,7 @@ CONFIG = GuildConfig(
 
                         If you to make a report to the Code of Conduct Committee, please use coc@europython.eu or contact an organiser at the conference.
                         """,  # noqa: E501 (line too long)
-                    tags=["Remote Support", "On-Site Support"],
+                    tags=["Remote Support", "On-Site Support", "Accessibility"],
                     require_tag=True,
                 ),
                 ForumChannel(

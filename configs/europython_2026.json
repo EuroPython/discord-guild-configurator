@@ -310,7 +310,8 @@
           "permission_overwrites": [],
           "tags": [
             "Remote Support",
-            "On-Site Support"
+            "On-Site Support",
+            "Accessibility"
           ],
           "require_tag": true
         },
