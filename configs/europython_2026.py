@@ -125,6 +125,7 @@ CONFIG = GuildConfig(
             permissions=["use_external_emojis", "use_external_stickers", "create_polls"],
         ),
         Role(name="Programme Team", color=COLOUR_GREY, mentionable=True),
+        Role(name="AV", color=COLOUR_GREY, mentionable=True),
         Role(
             name="@everyone",
             color=COLOUR_GREY,

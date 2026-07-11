@@ -126,6 +126,13 @@
       "permissions": []
     },
     {
+      "name": "AV",
+      "color": "#99AAB5",
+      "hoist": false,
+      "mentionable": true,
+      "permissions": []
+    },
+    {
       "name": "@everyone",
       "color": "#99AAB5",
       "hoist": false,
