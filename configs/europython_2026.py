@@ -135,7 +135,6 @@ CONFIG = GuildConfig(
                 "send_messages",
                 "send_messages_in_threads",
                 "create_public_threads",
-                "embed_links",
                 "attach_files",
                 "add_reactions",
                 "read_message_history",
