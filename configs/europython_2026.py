@@ -469,6 +469,21 @@ CONFIG = GuildConfig(
                         PermissionOverwrite(
                             roles=ROLES_VOLUNTEERS,
                             allow=["view_channel"],
+                            deny=[
+                                "send_messages",
+                                "send_messages_in_threads",
+                                "create_public_threads",
+                                "create_private_threads",
+                            ],
+                        ),
+                        PermissionOverwrite(
+                            roles=[ROLE_ORGANISERS],
+                            allow=[
+                                "send_messages",
+                                "send_messages_in_threads",
+                                "create_public_threads",
+                                "create_private_threads",
+                            ],
                         ),
                     ],
                 ),

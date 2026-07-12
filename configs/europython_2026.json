@@ -634,6 +634,23 @@
               "allow": [
                 "view_channel"
               ],
+              "deny": [
+                "send_messages",
+                "send_messages_in_threads",
+                "create_public_threads",
+                "create_private_threads"
+              ]
+            },
+            {
+              "roles": [
+                "Organisers"
+              ],
+              "allow": [
+                "send_messages",
+                "send_messages_in_threads",
+                "create_public_threads",
+                "create_private_threads"
+              ],
               "deny": []
             }
           ],
