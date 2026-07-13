@@ -396,7 +396,7 @@ CONFIG = GuildConfig(
                 TextChannel(
                     name="exhibit-hall", topic="For conversations related to the exhibit hall."
                 ),
-                TextChannel(
+                ForumChannel(
                     name="open-spaces",
                     topic=(
                         "For conversations related to the open spaces. Schedule and booking: [TBA]"

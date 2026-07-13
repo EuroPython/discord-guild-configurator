@@ -499,11 +499,12 @@
           "channel_messages": []
         },
         {
-          "type": "text",
+          "type": "forum",
           "name": "open-spaces",
           "topic": "For conversations related to the open spaces. Schedule and booking: [TBA]",
           "permission_overwrites": [],
-          "channel_messages": []
+          "tags": [],
+          "require_tag": false
         },
         {
           "type": "forum",
