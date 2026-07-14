@@ -356,7 +356,7 @@ CONFIG = GuildConfig(
                         """
                         A place to share pictures and stories about your pets, or animals in general :heart:
 
-                        No animal in sight? Don't despair, you can try $cat, $dog, $duck, or $fox.
+                        No animal in sight? Don't despair, you can try commands like /cat or /dog to generate one.
                         """  # noqa: E501 (line too long)
                     ),
                 ),
