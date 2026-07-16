@@ -81,6 +81,7 @@ CONFIG = GuildConfig(
         Role(
             name=ROLE_ORGANISERS,
             color=COLOUR_DARK_YELLOW,
+            mentionable=True,
             permissions=[
                 "mention_everyone",
                 "use_external_apps",
@@ -92,7 +93,6 @@ CONFIG = GuildConfig(
             name=ROLE_VOLUNTEERS,
             color=COLOUR_YELLOW,
             hoist=True,
-            mentionable=True,
         ),
         Role(name="Onsite Volunteers", color=COLOUR_GREY),
         Role(name="Remote Volunteers", color=COLOUR_GREY),
@@ -100,19 +100,16 @@ CONFIG = GuildConfig(
             name=ROLE_SPEAKERS,
             color=COLOUR_BLUE,
             hoist=True,
-            mentionable=True,
         ),
         Role(
             name=ROLE_SPONSORS,
             color=COLOUR_LIGHT_BLUE,
             hoist=True,
-            mentionable=True,
         ),
         Role(
             name=ROLE_PARTICIPANTS,
             color=COLOUR_PURPLE,
             hoist=True,
-            mentionable=True,
             permissions=["use_external_emojis", "use_external_stickers", "create_polls"],
         ),
         Role(name="Onsite Participants", color=COLOUR_GREY),
@@ -121,7 +118,6 @@ CONFIG = GuildConfig(
         Role(
             name=ROLE_BEGINNERS_DAY,
             color=COLOUR_DARK_PURPLE,
-            mentionable=True,
             permissions=["use_external_emojis", "use_external_stickers", "create_polls"],
         ),
         Role(name="Programme Team", color=COLOUR_GREY, mentionable=True),

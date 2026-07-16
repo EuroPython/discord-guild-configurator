@@ -32,7 +32,7 @@
       "name": "Organisers",
       "color": "#BC8C15",
       "hoist": false,
-      "mentionable": false,
+      "mentionable": true,
       "permissions": [
         "mention_everyone",
         "use_external_apps",
@@ -44,7 +44,7 @@
       "name": "Volunteers",
       "color": "#FFD700",
       "hoist": true,
-      "mentionable": true,
+      "mentionable": false,
       "permissions": []
     },
     {
@@ -65,21 +65,21 @@
       "name": "Speakers",
       "color": "#0096C7",
       "hoist": true,
-      "mentionable": true,
+      "mentionable": false,
       "permissions": []
     },
     {
       "name": "Sponsors",
       "color": "#8FD3E0",
       "hoist": true,
-      "mentionable": true,
+      "mentionable": false,
       "permissions": []
     },
     {
       "name": "Participants",
       "color": "#D34EA5",
       "hoist": true,
-      "mentionable": true,
+      "mentionable": false,
       "permissions": [
         "use_external_emojis",
         "use_external_stickers",
@@ -111,7 +111,7 @@
       "name": "Beginners Day",
       "color": "#658B34",
       "hoist": false,
-      "mentionable": true,
+      "mentionable": false,
       "permissions": [
         "use_external_emojis",
         "use_external_stickers",
